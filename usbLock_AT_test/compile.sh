@@ -1,0 +1,4 @@
+/home/barbare/arduino-1.6.11/arduino-builder -dump-prefs -logger=machine -hardware /home/barbare/arduino-1.6.11/hardware -tools /home/barbare/arduino-1.6.11/tools-builder -tools /home/barbare/arduino-1.6.11/hardware/tools/avr -built-in-libraries /home/barbare/arduino-1.6.11/libraries -libraries /home/barbare/Arduino/libraries -fqbn=teensy:avr:teensy31:usb=serial,speed=96opt,keys=en-us -ide-version=10611 -warnings=all -verbose $INO_FILE
+
+/home/barbare/arduino-1.6.11/arduino-builder -compile -logger=machine -hardware /home/barbare/arduino-1.6.11/hardware -tools /home/barbare/arduino-1.6.11/tools-builder -tools /home/barbare/arduino-1.6.11/hardware/tools/avr -built-in-libraries /home/barbare/arduino-1.6.11/libraries -libraries /home/barbare/Arduino/libraries -fqbn=teensy:avr:teensy31:usb=serial,speed=96opt,keys=en-us -ide-version=10611 -warnings=all -verbose $INO_FILE
+
