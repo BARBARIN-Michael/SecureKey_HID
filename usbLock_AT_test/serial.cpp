@@ -57,7 +57,7 @@ while (i < 6)
   ++i;
 }
 */
-                    
+
     switch(hash(str))
     {
         case 1640957532: //stopWrite
@@ -105,7 +105,7 @@ void CoreNetwork::ATFunction(String str)
     if (_isWritable)
         this->_serial_hm10.print(str);
     else
-        this->_serial.print("cannot write in HM10, please send command startWrite for start write\n");
+        this->_serial.print("cannot write in HM10, please send command startWrite for start write");
 }
 
 void CoreNetwork::getAndSendSerial_hm10()
