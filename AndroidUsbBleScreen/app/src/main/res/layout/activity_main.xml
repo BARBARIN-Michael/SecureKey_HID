@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.seed_up.usbblelockscreen.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:text="Scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/BtnScan"
+                android:layout_weight="1"
+                android:onClick="scanBle" />
+
+            <Button
+                android:text="Setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/BtnSetting"
+                android:layout_weight="1"
+                android:elevation="0dp"
+                android:onClick="ShowSettingsActivity" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+
+            <Button
+                android:text="Connect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnConnectBle"
+                android:onClick="connectBle" />
+
+            <Button
+                android:text="Lock / Unlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sendPasswordTest"
+                android:onClick="sendData" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="361dp"
+            android:layout_weight="0.69">
+
+            <ListView
+                android:state_selected="true"
+                android:layout_width="match_parent"
+                android:layout_height="258dp"
+                android:id="@+id/ViewBleScan"
+                android:headerDividersEnabled="false" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10">
+
+            <TextView
+                android:text="InfoText"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:id="@+id/InfoText"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="24sp"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
